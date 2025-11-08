@@ -24,7 +24,7 @@ The goal was to enhance my **personal portfolio website** by adding **external C
 ---
 
 ## 🧱 Technologies Used
-- **HTML5** – for semantic structure  
-- **CSS3** – for layout, color, and responsive styling  
+- **HTML** – for semantic structure  
+- **CSS** – for layout, color, and responsive styling  
 
 ---
