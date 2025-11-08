@@ -28,5 +28,3 @@ The goal was to enhance my **personal portfolio website** by adding **external C
 - **CSS3** – for layout, color, and responsive styling  
 
 ---
-
-## 🗂️ File Structure
