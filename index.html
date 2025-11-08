@@ -1,4 +1,4 @@
-<!-- Apurvam Arya: 2501730032, B.Tech Cse AiMl Section: D, Lab 1, Personal Portfolio -->
+<!-- Apurvam Arya: 2501730032, B.Tech Cse AiMl Section: D, Lab 2, Personal Portfolio with CSS -->
 <!--https://apurvamarya.github.io/LabAssignmentsKrmuWebDev1/-->
 
 <!DOCTYPE html>
@@ -6,122 +6,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio - Lab 1</title>
+    <title>Apurvam Arya - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Skip Link for Accessibility -->
-    <a href="#main-content">Skip to main content</a>
-
+    
+    <a href="#about">Skip to Main Content</a>
     <header>
         <h1>Apurvam Arya</h1>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <main id="main-content">
-
-        <!-- Hero Section -->
-        <section>
-            <h2>Welcome to my personal portfolio website</h2>
-            <p>Hello! I am an aspiring Computer Science Engineer with interest in Web Development and AI/ML.</p>
-        </section>
-
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <img src="images/profile.jpg" alt="Profile picture of Apurvam Arya" height="360" width="360">
-            <p>I am currently pursuing my B.Tech in Computer Science and Engineering. I enjoy building projects and exploring new technologies.</p>
-        </section>
-
-        <!-- Project Section -->
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <article>
-                        <h3>Hotel Management System</h3>
-                        <p>A CLI-based project using SQL for managing hotel bookings and customer records.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3>Barcode-based Auto Attendance</h3>
-                        <p>An attendance system using CSV files and barcode scanning for automation.</p>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3>Portfolio Website</h3>
-                        <p>A one-page portfolio built with semantic HTML to showcase my work.</p>
-                    </article>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Technology</th>
-                        <th>Proficiency</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>HTML</td>
-                        <td>Intermediate</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>Beginner</td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>Beginner</td>
-                    </tr>
-                    <tr>
-                        <td>Python</td>
-                        <td>Intermediate</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form>
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-container">
+            <img src="images/profile.jpg" alt="Apurvam Arya" class="profile-pic">
+            <div class="about-text">
+                <h3>Hello, I am <span>Apurvam Arya</span></h3>
                 <p>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    I am a Computer Science student passionate about Web Development and Artificial Intelligence.
+                    I love learning new technologies and building projects to improve my skills.
                 </p>
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                </p>
-                <p>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
-                </p>
-                <p>
-                    <button type="submit">Send Message</button>
-                </p>
-            </form>
-        </section>
+            </div>
+        </div>
+    </section>
 
-    </main>
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Hotel Management System</h3>
+                <p>Manages room bookings and customer details using SQL.</p>
+            </div>
+            <div class="card">
+                <h3>Barcode Attendance</h3>
+                <p>Automates attendance marking using barcode scanning.</p>
+            </div>
+            <div class="card">
+                <h3>Portfolio Website</h3>
+                <p>A responsive personal portfolio using HTML and CSS.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <table>
+            <tr>
+                <th>Technology</th>
+                <th>Level</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Intermediate</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Intermediate</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form>
+            <label>Name:</label>
+            <input type="text" placeholder="Your name" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Your email" required>
+
+            <label>Message:</label>
+            <textarea rows="4" placeholder="Your message"></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Apurvam Arya. All rights reserved.</p>
+        <p>© 2025 Apurvam Arya. All rights reserved.</p>
+        <a href="#about" id="top">Back to Top</a>
     </footer>
 
 </body>
