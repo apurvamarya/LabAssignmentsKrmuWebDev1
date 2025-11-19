@@ -1,106 +1,174 @@
-<!-- Apurvam Arya: 2501730032, B.Tech Cse AiMl Section: D, Lab 2, Personal Portfolio with CSS -->
+<!-- Apurvam Arya: 2501730032, B.Tech Cse AiMl Section: D, Lab 3, Personal Portfolio with CSS & Animations -->
 <!--https://apurvamarya.github.io/LabAssignmentsKrmuWebDev1/-->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apurvam Arya - Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Bitcount+Prop+Single+Ink:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Apurvam Arya — Portfolio</title>
 
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- <meta name="description" content="Apurvam Arya — Student & aspiring Full Stack Developer. Portfolio with projects, skills and contact form."> -->
 </head>
 <body>
-    
-    <a href="#about">Skip to Main Content</a>
-    <header>
-        <h1>Apurvam Arya</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <img src="images/profile.jpg" alt="Apurvam Arya" class="profile-pic">
-            <div class="about-text">
-                <h3>Hello, I am <span>Apurvam Arya</span></h3>
-                <p>
-                    I am a Computer Science student passionate about Web Development and Artificial Intelligence.
-                    I love learning new technologies and building projects to improve my skills.
-                </p>
-            </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="brand-name">Apurvam <span class="brand-highlight">Arya</span></h1>
+        <p class="role">B.Tech · CSE · AI/ML</p>
+      </div>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero section">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="intro-pre">Hi, I am</p>
+          <h2 class="hero-title">
+            Apurvam Arya
+          </h2>
+          <h3 class="hero-subtitle">
+            <span class="animated-role">Full Stack Developer</span>
+          </h3>
+          <p class="hero-desc">
+            I build clean, responsive web apps and enjoy learning AI/ML. Currently focused on improving front-end engineering & system design.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">See Projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
         </div>
-    </section>
 
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="projects">
-            <div class="card">
-                <h3>Hotel Management System</h3>
-                <p>Manages room bookings and customer details using SQL.</p>
-            </div>
-            <div class="card">
-                <h3>Barcode Attendance</h3>
-                <p>Automates attendance marking using barcode scanning.</p>
-            </div>
-            <div class="card">
-                <h3>Portfolio Website</h3>
-                <p>A responsive personal portfolio using HTML and CSS.</p>
-            </div>
+        <div class="hero-image" aria-hidden="true">
+          <!-- local uploaded image path (use exactly this path) -->
+          <img src="images/profile.jpg" alt="Profile photo of Apurvam Arya">
         </div>
+      </div>
     </section>
 
-    <section id="skills" class="section">
-        <h2>Skills</h2>
-        <table>
-            <tr>
-                <th>Technology</th>
-                <th>Level</th>
-            </tr>
-            <tr>
-                <td>HTML</td>
-                <td>Intermediate</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>Intermediate</td>
-            </tr>
-            <tr>
-                <td>Python</td>
-                <td>Intermediate</td>
-            </tr>
-        </table>
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container about-inner">
+        <h2 class="section-title">About Me</h2>
+        <p>
+          I'm a CSE student passionate about building web applications and learning AI/ML. I like to combine clean UI and thoughtful engineering to deliver simple, maintainable products.
+        </p>
+      </div>
     </section>
 
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <form>
-            <label>Name:</label>
-            <input type="text" placeholder="Your name" required>
+    <!-- SKILLS (GRID) -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-grid" role="list">
+          <div class="skill-card" role="listitem">
+            <h4>HTML</h4>
+            <p>Semantic markup, accessibility basics</p>
+            <div class="skill-level">Intermediate</div>
+          </div>
 
-            <label>Email:</label>
-            <input type="email" placeholder="Your email" required>
+          <div class="skill-card" role="listitem">
+            <h4>CSS</h4>
+            <p>Flexbox, Grid, responsive layouts</p>
+            <div class="skill-level">Intermediate</div>
+          </div>
 
-            <label>Message:</label>
-            <textarea rows="4" placeholder="Your message"></textarea>
+          <div class="skill-card" role="listitem">
+            <h4>JavaScript</h4>
+            <p>DOM, ES6+, basic tooling</p>
+            <div class="skill-level">Learning</div>
+          </div>
 
-            <button type="submit">Send</button>
+          <div class="skill-card" role="listitem">
+            <h4>Python</h4>
+            <p>Scripting, basics for ML</p>
+            <div class="skill-level">Intermediate</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (GRID) -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Hotel Management System</h3>
+            <p>Room bookings, SQL-backed admin dashboard.</p>
+            <a class="project-link" href="#" aria-label="Open Hotel Management System project">View</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Barcode Attendance</h3>
+            <p>Automated attendance capture using barcode scanner + CSV export.</p>
+            <a class="project-link" href="#" aria-label="Open Barcode Attendance project">View</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Responsive one-page portfolio built with HTML & CSS.</p>
+            <a class="project-link" href="#" aria-label="Open Portfolio project">View</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container contact-inner">
+        <h2 class="section-title">Contact Me</h2>
+        <form class="contact-form" action="#" method="post" aria-label="Contact form">
+          <label>
+            <span class="label-text">Name</span>
+            <input name="name" type="text" required placeholder="Your name">
+          </label>
+
+          <label>
+            <span class="label-text">Email</span>
+            <input name="email" type="email" required placeholder="Your email">
+          </label>
+
+          <label>
+            <span class="label-text">Message</span>
+            <textarea name="message" rows="5" placeholder="Write your message"></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send</button>
+            <a class="btn btn-ghost" href="mailto:apurvam@example.com">Email</a>
+          </div>
         </form>
+      </div>
     </section>
+  </main>
 
-    <footer>
-        <p>© 2025 Apurvam Arya. All rights reserved.</p>
-        <a href="#about" id="top">Back to Top</a>
-    </footer>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Apurvam Arya. All rights reserved.</p>
+      <a class="back-top" href="#main" title="Back to top">Back to Top</a>
+    </div>
+  </footer>
 
+  <!-- back to top button -->
+  <a class="fab" href="#main" aria-label="Back to top">↑</a>
 </body>
 </html>
