@@ -86,5 +86,4 @@ Includes:
 - **Google Fonts (Poppins)**
 
 ---
-## 📁 Project Structure
 
